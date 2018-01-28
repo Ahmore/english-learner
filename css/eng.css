@@ -1,0 +1,119 @@
+/* STRUKTURA STRONY */
+
+a 														{ cursor: pointer; text-decoration: none; }
+header													{ position: relative; }			
+header menu												{ margin: 0 auto; text-align: center; margin-top: -16px; }
+header #dictionary-logo									{ cursor: pointer; text-align: center; font-size: 60px; font-family: Comic sans MS; color: skyblue; }
+header #dictionary-dictionary								{ position: relative; left: -42px; }
+#dictionary-container									{ width: 530px; overflow: auto; margin: 50px auto 0px auto; position: relative; }
+
+
+/* SŁOWNIK */
+
+#dictionary-container form								{ display: inline; }
+#dictionary-container table td								{ padding: 0px 5px; height: 25px; }
+#dictionary-container input[type='text']					{ height: 21px; }
+#dictionary-words, #dictionary-footer					{ margin-top: -1px; }
+#dictionary-header										{ background-color: lightblue; }
+#dictionary-footer										{ background-color: lightblue; }
+#dictionary-footer input									{ background-color: inherit; }
+input::-webkit-input-placeholder							{ font-style: italic}
+input:-moz-placeholder									{ font-style: italic}
+input::-moz-placeholder									{ font-style: italic}
+input:-ms-input-placeholder 								{ font-style: italic}
+
+#dictionary-header, #dictionary-words, #dictionary-footer	{ border-collapse: collapse; table-layout: fixed; empty-cells: hide; }
+#dictionary-header, #dictionary-header td,
+#dictionary-words, #dictionary-words td, 
+#dictionary-footer, #dictionary-footer td				{ border-color: grey; } 
+#dictionary-words input, #dictionary-header input, #dictionary-footer input			{ border: none; }
+#dictionary-words tr:hover								{ background-color: lightblue; }
+
+
+#dictionary-words tr td:nth-child(4)						{ width: 20px; text-align: center; color: red; }
+
+#dictionary-words tr td:nth-child(1),
+#dictionary-footer tr td:nth-child(1),
+#dictionary-header tr td:nth-child(1)						{ width: 200px; }
+
+#dictionary-words tr td:nth-child(1) input,
+#dictionary-footer tr td:nth-child(1) input,
+#dictionary-header tr td:nth-child(1) input					{ width: 200px; }
+
+#dictionary-words tr td:nth-child(2), 
+#dictionary-footer tr td:nth-child(2), 
+#dictionary-header tr td:nth-child(2)						{ width: 200px; }
+
+#dictionary-words tr td:nth-child(2) input, 
+#dictionary-footer tr td:nth-child(2) input, 
+#dictionary-header tr td:nth-child(2) input					{ width: 200px; }
+ 
+#dictionary-words tr td:nth-child(3), 
+#dictionary-footer tr td:nth-child(3), 
+#dictionary-header tr td:nth-child(3)						{ width: 65px; }
+
+#dictionary-words tr td:nth-child(3) input, 
+#dictionary-footer tr td:nth-child(3) input, 
+#dictionary-header tr td:nth-child(3) input					{ width: 65px; }
+
+#dictionary-page-informations							{ margin: 20px auto; text-align: center; overflow: auto; text-align: center; }
+#dictionary-page-informations > div						{ display: inline-block; }
+#dictionary-page-informations #dictionary-crt_page		{ width: 30px;  }
+#dictionary-page-informations #dictionary-crt_page:focus	{ box-shadow: 0px 0px 4px skyblue; border: 1px solid skyblue; border-radius: 2px; padding-left: 2px; }
+#dictionary-page-informations #dictionary-last_page		{ color: skyblue; font-weight: bold; font-size: 13pt; }
+#dictionary-page-informations span						{ padding: 0px 7px; }
+
+
+/* TEST */
+
+.chooseParamsToTest label									{ display: block; }							
+.chooseParamsToTest label > span							{ display: inline-block; width: 100px; margin: 5px 0px; }							
+.chooseParamsToTest > div								{ font-family: comic sans ms; font-size: 15pt; font-weight: bold; margin-bottom: 10px; }				
+ 
+#dictionary-table-test									{ border: none; border-collapse: collapse; }
+#dictionary-table-test tr:first-child					{ background-color: lightblue; }
+#dictionary-table-test tr td:nth-child(3) input				{ width: 300px; border: none; border-bottom: 1px dotted; padding: 2px; }
+#dictionary-table-test .dictionary-test-helper			{ color: skyblue; font-size: 14pt; }
+#dictionary-table-test .dictionary-test-helper:hover		{ text-shadow: 1px 1px 1px yellow; }
+#dictionary-score										{ text-align: center; font-size: 19pt; margin-bottom: 30px; font-family: comic sans ms; }
+#dictionary-score-details								{ border-collapse: collapse; margin: auto; }
+#dictionary-score-details tr:first-child					{ background-color: lightblue; }
+
+
+.correct:before											{ content: "\2714"; color: green; }
+.incorrect:before										{ content: "\2718"; color: red; }
+
+/* POZOSTAŁE */
+.float													{ float: left; }
+.arrow													{ width: 22px; height: 20px; color: skyblue; font-weight: bold; font-size: 16pt; margin-top: -6px; display: inline-block; }
+
+
+input[type='submit'] 										{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	border: 1px solid skyblue;
+	height: 25px;
+	width: 75px;
+	color: white;
+	font-size: Arial;
+	border-radius: 2px;
+    font-weight: 600;
+    font-size: 12px;
+	-moz-user-select: none;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		color-stop(0.24, #44D2F5),
+		color-stop(0.77, #61ADFF),
+		color-stop(1, #B3DAF2)
+	);
+	background-image: -o-linear-gradient(right bottom, #44D2F5 24%, #61ADFF 77%, #B3DAF2 100%);
+	background-image: -moz-linear-gradient(right bottom, #44D2F5 24%, #61ADFF 77%, #B3DAF2 100%);
+	background-image: -webkit-linear-gradient(right bottom, #44D2F5 24%, #61ADFF 77%, #B3DAF2 100%);
+	background-image: -ms-linear-gradient(right bottom, #44D2F5 24%, #61ADFF 77%, #B3DAF2 100%);
+	background-image: linear-gradient(to right bottom, #44D2F5 24%, #61ADFF 77%, #B3DAF2 100%);
+}
+
+.dictionary-currentMode									{ font-weight: bold; text-decoration: underline; }
